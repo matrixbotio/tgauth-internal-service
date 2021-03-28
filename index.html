@@ -22,7 +22,7 @@
 			onauth: 'onTelegramAuth(user)',
 			'request-access': 'write',
 		};
-		for(const key of data) script.setAttribute('data-' + key, data[key]);
+		for(const key in data) script.setAttribute('data-' + key, data[key]);
 		document.body.appendChild(script);
 	</script>
 </body>
